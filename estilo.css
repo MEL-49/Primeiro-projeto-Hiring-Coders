@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap'); /*cairo para o cabeçalho*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Nunito:wght@800&display=swap'); /*nunito para o meu nome*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&family=Nunito:wght@600;800&display=swap'); /*nunito pro h5*/
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');/*para o texto*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Cairo', sans-serif;
+    font-size: 19px;
+    color: #e2e4faf5;
+    align-items: center;
+    padding: 35px;
+    position: relative;
+    left: -100px;
+    transition: 600ms;
+
+}
+
+.hover:hover{
+    color:rgb(28, 46, 94)
+}
+
+header{
+    display: flex;
+    background-color: rgba(28, 46, 94, 0.635);
+    justify-content:space-between;
+    height: 42px;
+    align-items: center;
+    border-bottom: 2.8px solid #002f5a;
+}
+
+.logo{
+    width: 95px;
+    height: 70px;
+    position: relative;
+    left: 130px;
+    top: 2px;
+}
+
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 45px;
+    color: rgba(84, 91, 173, 0.766);
+    position: relative;
+    top: 170px;
+    left:65px;    
+}
+
+h5{
+    font-family: 'Nunito', sans-serif;
+    font-size: 27px;
+    color: #383E7C;
+    position: relative;
+    top: 170px;
+    left: 65px;    
+  
+}
+
+#p1{
+    font-family: 'Nunito', sans-serif;
+    max-width: 750px;
+    text-align: justify;
+    font-size: 19px;
+    position: relative;
+    color: #edeeff;
+    top: 210px;
+    left: 65px;  
+    background-color: #000950a6;
+    padding: 16px;
+    border-radius: 20px;
+    line-height: 34px;
+}
+
+.p2 {
+    font-family: 'Nunito', sans-serif;
+    max-width: 600px;
+    text-align: justify;
+    font-size: 24px;
+    position: relative;
+    color: #383E7C;
+    top: 210px;
+    left: 65px; 
+    font-weight: bold; 
+
+}
+
+.active {
+    display: block !important;
+}
+
+body{
+    background-image: url(./steven.svg);
+    background-repeat: no-repeat;
+    background-size: 102.5%;
+    overflow: hidden;
+    background-attachment: fixed;
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.seta{
+    position: relative;
+    top: 183px;
+    left: 425px; 
+    color:#383E7C; 
+    height:25px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+#animation{
+    transition: 600ms;
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 600ms;
+}
+
+form input{
+    width: 20%;
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 220px;
+    left: 65px;   
+    padding: 5px 10px;
+    border-radius: 4px 0px 0px 4px;
+    background-color: #f5f2fff6;
+    border: none;
+}
+
+form button{
+    width: 6%;
+    font-family: 'Cairo', sans-serif;
+    position: relative;
+    top: 220px;
+    left: 55px;  
+    padding: 5px 10px;  
+    background:#1c2e5eed;
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: #e7e9ff;
+    cursor: pointer;
+    border-radius: 0px 4px  4px 0px;
+    transition: all 300ms ease-out;
+    border: none;
+}
+
+form button:hover{
+    background-color: #2f3680c3;
+}

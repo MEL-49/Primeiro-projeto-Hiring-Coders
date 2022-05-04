@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br;">
+    <head>
+        <script src="https://kit.fontawesome.com/7cdef313cb.js" crossorigin="anonymous"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="estilo.css" rel="stylesheet">
+        <title>MEL</title>
+    </head>
+
+    <body>
+        <header>
+            <img class="logo" src="logo.svg" alt="logo da página escrito mel">
+            <nav class="hover">
+                <a class="hover" target="blanck" href="https://github.com/MEL-49">GitHub</a>
+                <a class="hover" target="blanck" href="https://www.linkedin.com/in/maria-eduarda-de-lima-538233231/">Linkedin</a>
+                <a class="hover" target="blanck" href="mailto:gladillis.49@gmail.com">Gmail</a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+
+                <article>
+                    <h1 class="nome">MARIA EDUARDA DE LIMA</h1>
+                    <h5 class="nome">Estudante de Desenvolvimento de Sistemas Full Stack</h5>
+                </article>
+
+                <article onclick="displayAbout()" class="seta"> <!--setinha-->
+                    <i id="animation" class="fa-solid fa-circle-chevron-down"></i>
+                </article>
+
+                <article style="display: none;" id="about">
+                    <p id="p1">Olá, seja bem-vindo ao meu primeiro projeto!! Sou uma estudante de 18 anos em busca de aprender muito  sobre tudo o que puder na área STEM. Possuo bastante interesse em ciência da computação e matemática,  pois no futuro gostaria de trabalhar usando todo esse conhecimento para contribuir com a ciência, principalmente na área da saúde. Atualmente curso o técnico em DS na ETEC  e sou aluna em uma Ong chamada Programadores do Amanhã. Também faço parte do projeto da Hiring Coders #3 oferecido pela VTEX.</p>
+                </article>
+
+                <article>
+                    <br>
+                    <p class="p2">Deixe seu contato!</p>
+                </article>
+
+                <article>
+                    <form action="">
+                        <input type="text" placeholder="Seu melhor email :)">
+                        <button>enviar</button>
+                    </form>
+                </article>
+
+            </section>
+        </main>
+
+        <script>
+            function displayAbout() {
+                var arrow = document.getElementById("animation");
+                arrow.classList.toggle('rotate');
+
+                var display = document.getElementById("about");
+                display.classList.toggle('active');
+            }
+        </script>
+
+    </body>
+</html>
